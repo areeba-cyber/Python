@@ -5,3 +5,11 @@
 # slash
 
 print("Hello World") #printing hello world
+
+#single line comment
+
+"""
+multiple 
+line 
+comment
+"""
