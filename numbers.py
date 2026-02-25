@@ -29,3 +29,8 @@ print('areeba') (result= areeba)
 4.0 != 5.0 (result= True)
 x<y<z
 x<y and y<z
+
+# Import Math
+math.floor(3.5) result = 3
+math.floor(-3.5) result = -4
+# Floor gives us closest value below number before decimal
