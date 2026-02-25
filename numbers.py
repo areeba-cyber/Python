@@ -34,3 +34,18 @@ x<y and y<z
 math.floor(3.5) result = 3
 math.floor(-3.5) result = -4
 # Floor gives us closest value below number before decimal
+# Python has precision in numbers
+# Complex Numbers
+(2 + 1j) * 3 result = (6+3j)
+
+
+# Import Random
+# This will give random number between 0 to 1 in decimal
+random.random()
+
+# To specify number
+random.randint(1, 20)
+
+# Random Choice in array
+l1 = ['areeba', 'khalid', 'ayesha', 'ali', 'hassan']
+random.choice(l1)
