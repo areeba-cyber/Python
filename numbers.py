@@ -49,3 +49,6 @@ random.randint(1, 20)
 # Random Choice in array
 l1 = ['areeba', 'khalid', 'ayesha', 'ali', 'hassan']
 random.choice(l1)
+
+random.shuffle(l1)
+# Shuffle the list in array
