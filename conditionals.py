@@ -43,6 +43,7 @@ elif score >= 60:
 else:
     grade = "F"
 print("Grade: ", grade)
+
 4. Fruit Ripeness Checker
 Problem: Determine if a fruit is ripe, overripe, or unripe based on its color. (e.g., Banana: Green - Unripe, Yellow - Ripe, Brown - Overripe)
 # Solution
@@ -72,6 +73,7 @@ elif weather == "Snowy":
     activity = "Build a snowman"
 
 print(activity)
+
 6. Transportation Mode Selection
 Problem: Choose a mode of transportation based on the distance (e.g., <3 km: Walk, 3-15 km: Bike, >15 km: Car).
 # Solution
@@ -86,11 +88,47 @@ else:
     transport = "Car"
 
 print("AI recommends you the transport of: ", transport)
+
 7. Coffee Customization
 Problem: Customize a coffee order: "Small", "Medium", or "Large" with an option for "Extra shot" of espresso.
+# Solution
+
+order_size = "Medium"
+extra_shot = True
+
+if extra_shot:
+    coffee = order_size + " coffee with an extra shot"
+else:
+    coffee = order_size + " coffee"
+
+print("Order: ", coffee)
+
 8. Password Strength Checker
 Problem: Check if a password is "Weak", "Medium", or "Strong". Criteria: < 6 chars (Weak), 6-10 chars (Medium), >10 chars (Strong).
+# Solution
+
+password = "Secure3P@ss"
+password_length = len(password)
+
+if len(password) < 6:
+    strength = "Weak"
+elif len(password) <= 10:
+    strength = "Medium"
+else:
+    strength = "Strong"
+
+print("Password strength is: ", strength)
+
 9. Leap Year Checker
 Problem: Determine if a year is a leap year. (Leap years are divisible by 4, but not by 100 unless also divisible by 400).
+# Solution
+
+year = 2023
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print( year, " is a leap year")
+else:
+    print(year, "is NOT a leap year")
+    
 10. Pet Food Recommendation
 Problem: Recommend a type of pet food based on the pet's species and age. (e.g., Dog: <2 years - Puppy food, Cat: >5 years - Senior cat food).
