@@ -45,10 +45,47 @@ else:
 print("Grade: ", grade)
 4. Fruit Ripeness Checker
 Problem: Determine if a fruit is ripe, overripe, or unripe based on its color. (e.g., Banana: Green - Unripe, Yellow - Ripe, Brown - Overripe)
+# Solution
+
+fruit = "Banana"
+color = "Yellow"
+
+if fruit == "Banana":
+    if color == "Green":
+        print("Unripe")
+    elif color == "Yellow":
+        print("Ripe")
+    elif color == "Brown":
+        print("OverRipe")
+
 5. Weather Activity Suggestion
 Problem: Suggest an activity based on the weather (e.g., Sunny - Go for a walk, Rainy - Read a book, Snowy - Build a snowman).
+# Solution
+
+weather = "Sunny"
+
+if weather == "Sunny":
+    activity = "Go for a walk"
+elif weather == "Rainy":
+    activity = "Read a book"
+elif weather == "Snowy":
+    activity = "Build a snowman"
+
+print(activity)
 6. Transportation Mode Selection
 Problem: Choose a mode of transportation based on the distance (e.g., <3 km: Walk, 3-15 km: Bike, >15 km: Car).
+# Solution
+
+distance = 5
+
+if distance < 3:
+    transport = "Walk"
+elif distance <= 15:
+    transport = "Bike"
+else:
+    transport = "Car"
+
+print("AI recommends you the transport of: ", transport)
 7. Coffee Customization
 Problem: Customize a coffee order: "Small", "Medium", or "Large" with an option for "Extra shot" of espresso.
 8. Password Strength Checker
