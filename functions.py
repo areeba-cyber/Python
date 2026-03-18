@@ -40,9 +40,17 @@ def circle_stats(radius):
 
  a, c = circle_stats(3)
  print("Area: ", a, "Circumference: ", c)
-    
+
 5. Default Parameter Value
 Problem: Write a function that greets a user. If no name is provided, it should greet with a default name.
+# Solution
+
+def greet(name = "User"):
+    return "Hello, " + name + " ! "
+
+    print(greet("chai"))
+    print(greet())
+    
 6. Lambda Function
 Problem: Create a lambda function to compute the cube of a number.
 7. Function with *args
