@@ -1,5 +1,13 @@
 1. Basic Function Syntax
 Problem: Write a function to calculate and return the square of a number.
+# Solution 
+
+def square(number):
+   return number ** 2
+
+   result = square(4)
+   print(16)
+   
 2. Function with Multiple Parameters
 Problem: Create a function that takes two numbers as parameters and returns their sum.
 3. Polymorphism in Functions
