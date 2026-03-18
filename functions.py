@@ -50,11 +50,19 @@ def greet(name = "User"):
 
     print(greet("chai"))
     print(greet())
-    
+
 6. Lambda Function
 Problem: Create a lambda function to compute the cube of a number.
+# Solution
+
+cube = lambda x: x ** 3
+print(cube(3))
+
 7. Function with *args
 Problem: Write a function that takes variable number of arguments and returns their sum.
+# Solution
+
+
 8. Function with **kwargs
 Problem: Create a function that accepts any number of keyword arguments and prints them in the format key: value.
 9. Generator Function with yield
