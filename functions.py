@@ -16,8 +16,18 @@ def sum(num1, num2):
     return num1 + num2
 
     print(sum(10, 2))
+
 3. Polymorphism in Functions
 Problem: Write a function multiply that multiplies two numbers, but can also accept and multiply strings.
+# Solution
+
+def multiply(p1, p2):
+    return p1 * p2
+
+    print(multiply(4, 8))
+    print(multiply("a", 8))
+    print(multiply(9, "b"))
+    
 4. Function Returning Multiple Values
 Problem: Create a function that returns both the area and circumference of a circle given its radius.
 5. Default Parameter Value
