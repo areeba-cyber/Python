@@ -62,10 +62,48 @@ print(cube(3))
 Problem: Write a function that takes variable number of arguments and returns their sum.
 # Solution
 
+def sum_all(*args):
+    print(args)
+    for i in args:
+        print(i * 2)
+    return sum(args)
+
+print(sum_all(1, 2, 3))
+# print(sum_all(1, 2, 3, 4, 5))
+# print(sum_all(1, 2, 3, 4, 5, 6, 7, 8))
 
 8. Function with **kwargs
 Problem: Create a function that accepts any number of keyword arguments and prints them in the format key: value.
+# Solution
+
+def print_kwargs(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+
+print_kwargs(name="shaktiman", power="lazer")
+print_kwargs(name="shaktiman")
+print_kwargs(name="shaktiman", power="lazer", enemy = "Dr. Jackaal")
+
 9. Generator Function with yield
 Problem: Write a generator function that yields even numbers up to a specified limit.
+# Solution
+
+def even_generator(limit):
+    for i in range(2, limit + 1, 2):
+        yield i
+
+
+
+for num in even_generator(10):
+    print(num)
+
 10. Recursive Function
 Problem: Create a recursive function to calculate the factorial of a number.
+# Solution
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
