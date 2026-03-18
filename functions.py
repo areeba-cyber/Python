@@ -27,9 +27,20 @@ def multiply(p1, p2):
     print(multiply(4, 8))
     print(multiply("a", 8))
     print(multiply(9, "b"))
-    
+
 4. Function Returning Multiple Values
 Problem: Create a function that returns both the area and circumference of a circle given its radius.
+# Solution
+import math
+
+def circle_stats(radius):
+    area = math.pi * radius ** 2
+    circumference = 2 * math.pi * radius
+    return area, circumference
+
+ a, c = circle_stats(3)
+ print("Area: ", a, "Circumference: ", c)
+    
 5. Default Parameter Value
 Problem: Write a function that greets a user. If no name is provided, it should greet with a default name.
 6. Lambda Function
