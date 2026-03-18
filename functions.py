@@ -7,9 +7,15 @@ def square(number):
 
    result = square(4)
    print(16)
-   
+
 2. Function with Multiple Parameters
 Problem: Create a function that takes two numbers as parameters and returns their sum.
+# Solution
+
+def sum(num1, num2):
+    return num1 + num2
+
+    print(sum(10, 2))
 3. Polymorphism in Functions
 Problem: Write a function multiply that multiplies two numbers, but can also accept and multiply strings.
 4. Function Returning Multiple Values
