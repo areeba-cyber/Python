@@ -14,4 +14,10 @@ print("My age is: ", age)
 
 # 3. Store your first, middle and last name in three different variables and then print your full name using these variables
 
+First = "Areeba"
+Middle = "Khalid"
+Last = "Rajpoot"
+print("My name is: " +First+ " " +Middle+ " " + Last)
+
 # 4. Answer which of these are invalid variable names: _nation 1record record1 record_one record-one record^one continue
+# 1record, record-one, record^one, continue
