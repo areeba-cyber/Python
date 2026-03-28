@@ -53,6 +53,15 @@ print('Binary of number 17 is:',format(num,'b'))
 
 # String in Python
 # 1. Create 3 variables to store street, city and country, now create address variable to store entire address. Use two ways of creating this variable, one using + operator and the other using f-string. Now Print the address in such a way that the street, city and country prints in a separate line
+
+Street = "Street NO 3"
+City = "Okara"
+Country = "Pakistan"
+address1 = Street + '\n' + City + '\n' + Country
+print("Address in + format is :", address1)
+address2 = f'{Street}\n{City}\n{Country}'
+print("Address in f format is:",  address2)
+
 # 2. Create a variable to store the string "Earth revolves around the sun"
 # Print "revolves" using slice operator
 # Print "sun" using negative index
