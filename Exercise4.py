@@ -85,5 +85,54 @@ def query():
 # mtl ==> [234, 180, 160] ==> avg:  191.33
 # add: When user enters 'add', it asks for stock ticker and price. If stock already exist in your list (like info, ril etc) then it will append the price to the list. Otherwise it will create new entry in your dictionary. For example entering 'tata' and 560 will add tata ==> [560] to the dictionary of stocks.
 # Solution
+import statistics
+
+stocks = {
+    'info': [600,630,620],
+    'ril': [1430,1490,1567],
+    'mtl': [234,180,160]
+}
+
+def print_all():
+    for stock,price_list in stocks.items():
+        avg = statistics.mean(price_list)
+        print(f"{stock} ==> {price_list} ==> avg: ",round(avg,2))
+
+
+def add():
+    s = input("Enter a stock ticker to add:")
+    p = input("Enter price of this stock:")
+    p=float(p)
+    if s in stocks:
+        stocks[s].append(p)
+    else:
+        stocks[s] = [p]
+    print_all()
+
+
+def main():
+    op=input("Enter operation (print, add or amend):")
+    if op.lower() == 'print':
+        print_all()
+    elif op.lower() == 'add':
+        add()
+    else:
+        print("Unsupported operation:",op)
+
+if __name__ == '__main__':
+    main()
 
 # 3. Write circle_calc() function that takes radius of a circle as an input from user and then it calculates and returns area, circumference and diameter. You should get these values in your main program by calling circle_calc function and then print them
+import math
+
+def circle_calc(radius):
+    area=math.pi*(radius**2)
+    circumference=2*math.pi*radius
+    diameter=2*radius
+    return area, circumference,diameter
+
+if __name__=="__main__":
+    r=input("Enter a radius:")
+    r=float(r)
+    area, c, d = circle_calc(r)
+    print(f"area {area}, circumference {c}, diameter {d}")
