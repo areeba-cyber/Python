@@ -136,3 +136,8 @@ elif marks >= 70:
     print("Grade B")
 else:
     print("Grade C")
+
+
+# For Loops and While Loops
+# A for loop is used when you want to iterate over a sequence, such as a list, string, or range of numbers.
+# A while loop repeats code as long as a condition is True.
