@@ -122,3 +122,17 @@ student = {
     "age": 23,
     "skills": ["Python", "React", "SQL"]
 }
+
+
+# If-Else Conditions
+# In Python, if-else conditions are used to make decisions in your program. They allow your code to do different things depending on whether a condition is True or False.
+marks = 75
+
+if marks >= 90:
+    print("Grade A+")
+elif marks >= 80:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+else:
+    print("Grade C")
