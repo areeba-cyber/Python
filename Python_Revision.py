@@ -73,3 +73,22 @@ Represents the absence of a value.
 result = None
 print(type(result))
 Output: NoneType
+
+
+# String
+# A string (str) is a sequence of characters used to store text in Python.
+# For example, names, cities, emails, and sentences are strings.
+name = "Areeba"
+city = "Okara"
+message = "I am learning Python"
+print(name)
+print(city)
+print(message)
+
+String indexing:
+Each character in a string has a position called an index.
+Python indexing starts at 0, not 1.
+word = "PYTHON"
+print(word[0])
+print(word[2])
+print(word[5])
