@@ -95,3 +95,30 @@ print(word[5])
 
 
 # Lists, Tuples, Sets, and Dictionaries in Python 🐍
+Feature	            List	Tuple	Set	                 Dictionary
+Syntax	            []	    ()	    {}	                 {key: value}
+Ordered	            Yes	    Yes	    No guaranteed order	 Yes
+Changeable	        Yes	    No	    Yes	                 Yes
+Allows duplicates	Yes	    Yes	    No	                 Keys must be unique
+Access by index	    Yes	    Yes	    No	                 Access by key
+
+A list stores multiple items in a single variable. Lists are ordered, changeable, and allow duplicate values.
+A tuple is an ordered collection that cannot be changed after it is created. This property is called immutability.
+A set is a collection of unique items. If you add the same value more than once, only one copy is kept.
+A dictionary stores data as key-value pairs. Each key identifies its associated value.
+# How all four work together
+# List: several students
+students = ["Ali", "Areeba", "Sara"]
+
+# Tuple: fixed coordinates
+location = (30.81, 73.45)
+
+# Set: unique marks
+marks = {80, 90, 80, 75}
+
+# Dictionary: one student's details
+student = {
+    "name": "Areeba",
+    "age": 23,
+    "skills": ["Python", "React", "SQL"]
+}
