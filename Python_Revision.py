@@ -240,3 +240,84 @@ print(check(7))
 # List and dictionary comprehensions let you create lists and dictionaries in a shorter, cleaner way instead of writing multiple lines with loops.
 numbers = [i for i in range(1, 6)]
 print(numbers)
+
+
+# Exception Handling in Python 
+# Exception handling in Python means handling errors that occur while a program is running so that your program doesn't crash unexpectedly.
+# For example, if you divide a number by zero, Python raises an error. Exception handling lets you handle that error gracefully.
+
+try and except
+We use try and except to handle exceptions.
+- try: Contains the code that might cause an error.
+- except: Runs if a matching error occurs.
+
+Common types of exceptions
+Exception	        Meaning	               Example
+ZeroDivisionError	Dividing by zero	   10 / 0
+ValueError	        Invalid value	       int("hello")
+TypeError	        Incompatible types	   "5" + 5
+IndexError	        Invalid list index	   [1, 2][5]
+KeyError	        Missing dictionary key	{"name": "Ali"}["age"]
+FileNotFoundError	File doesn't exist	    Opening a missing file
+
+
+
+try:
+    number = int(input("Enter a number: "))
+    result = 100 / number
+    print(result)
+
+except ValueError:
+    print("Please enter a valid integer.")
+
+except ZeroDivisionError:
+    print("Number cannot be zero.")
+
+
+# The else block
+The else block runs only when no exception occurs in the try block.
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+
+except ValueError:
+    print("Enter a valid number.")
+
+else:
+    print("Result:", result)
+
+
+# The finally block
+# The finally block runs whether an exception occurs or not.
+
+# The raise keyword
+The raise keyword lets you intentionally raise an exception when a condition is invalid.
+
+age = -5
+if age < 0:
+    raise ValueError("Age cannot be negative.")
+
+# complete example
+try:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if num2 == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+
+    result = num1 / num2
+
+except ValueError:
+    print("Please enter valid numbers.")
+
+except ZeroDivisionError as error:
+    print(error)
+
+else:
+    print("Result:", result)
+
+finally:
+    print("Calculator closed.")
