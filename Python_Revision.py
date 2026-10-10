@@ -173,3 +173,49 @@ print(result)
 print()	                                                               return
 Displays a value on the screen.	                                       Sends a value back to the caller.
 Does not automatically give the value back for further use.	           Allows the result to be reused.
+
+
+# *args and **kwargs in Python 
+# In Python, *args and **kwargs allow a function to accept a flexible number of arguments.
+
+1. What is *args?
+*args allows you to pass multiple positional arguments to a function without knowing in advance how many there will be.
+# without args
+def add(a, b):
+    print(a + b)
+add(10, 20)
+# This function accepts only two arguments. If you pass three, it will raise an error.
+
+# with *args
+def add(*args):
+    print(args)
+add(10, 20, 30, 40)
+
+2. What is **kwargs?
+**kwargs allows you to pass multiple keyword arguments — arguments supplied using names.
+def student(**kwargs):
+    print(kwargs["name"])
+    print(kwargs["age"])
+
+student(name="Areeba", age=23)
+
+*args
+Positional arguments
+- Collects values into a tuple.
+- Arguments don't need names.
+
+**Kwargs
+Keyword arguments
+- Collects values into a dictionary.
+- Arguments have names.
+
+# Real world example
+def student_info(*students, **details):
+    print("Students :", students)
+    print("Details :", deatils)
+
+student_info(
+    "Areeba", "Ali", "Ahmed",
+    age = 23,
+    semester = 6
+)
