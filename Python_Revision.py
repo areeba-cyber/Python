@@ -321,3 +321,26 @@ else:
 
 finally:
     print("Calculator closed.")
+
+
+# Modules in Python 
+# A module in Python is a file containing Python code—such as functions, variables, and classes—that you can reuse in another Python file.
+# Instead of writing all your code in one file, you can divide it into smaller, organized files.
+
+Built-In module in python
+math	       Mathematical operations
+random	       Generate random values
+datetime	   Work with dates and times
+os	           Interact with the operating system
+statistics     Calculate mean, median, and more
+# entire module
+import math
+print(math.sqrt(16))
+
+# import a specific function
+from math import sqrt
+print(sqrt(16))
+
+# import with an alias
+import math as m
+print(m.sqrt(36))
