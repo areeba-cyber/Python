@@ -234,3 +234,9 @@ print(double(4))
 check = lambda n: "Even" if n % 2 == 0 else "Odd"
 print(check(4))
 print(check(7))
+
+
+# List and Dictionary Comprehensions
+# List and dictionary comprehensions let you create lists and dictionaries in a shorter, cleaner way instead of writing multiple lines with loops.
+numbers = [i for i in range(1, 6)]
+print(numbers)
