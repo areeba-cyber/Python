@@ -141,3 +141,19 @@ else:
 # For Loops and While Loops
 # A for loop is used when you want to iterate over a sequence, such as a list, string, or range of numbers.
 # A while loop repeats code as long as a condition is True.
+
+
+# Functions in Python
+# A function in Python is a reusable block of code that performs a specific task. You write the code once and can use it whenever you need it.
+# For example, if you want to print "Hello, World!" many times, you can put that code inside a function instead of writing it repeatedly.
+def greet():
+    print("Hello, World!")
+greet()
+
+- def — tells Python you are defining a function.
+- greet — the function's name.
+- () — holds parameters if needed.
+- : — starts the function body.
+- print() — the task the function performs.
+- greet() — calls the function to run its code.
+Remember: defining a function does not execute it. You must call it.
