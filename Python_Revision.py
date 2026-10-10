@@ -157,3 +157,19 @@ greet()
 - print() — the task the function performs.
 - greet() — calls the function to run its code.
 Remember: defining a function does not execute it. You must call it.
+
+# . Functions with parameters
+def greet(name):
+    print("Hello", name)
+greet("Areeba")    
+
+# The return statement
+# The return statement sends a result back to the place where the function was called.
+def add(a, b):
+    return a + b
+result = add(10, 20)
+print(result)
+
+print()	                                                               return
+Displays a value on the screen.	                                       Sends a value back to the caller.
+Does not automatically give the value back for further use.	           Allows the result to be reused.
