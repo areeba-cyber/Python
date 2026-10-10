@@ -344,3 +344,22 @@ print(sqrt(16))
 # import with an alias
 import math as m
 print(m.sqrt(36))
+
+
+# What is the difference between a module and a package?
+These two terms are related but different.
+
+Module
+A single Python file, such as calculator.py.
+
+Package
+A way to organize related modules inside a directory. A regular Python package commonly contains an __init__.py file.
+
+my_project/
+    main.py
+    utilities/
+        __init__.py
+        calculator.py
+        greetings.py
+
+Here, utilities is the package, while calculator.py and greetings.py are modules.
