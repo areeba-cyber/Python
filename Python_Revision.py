@@ -368,3 +368,6 @@ Here, utilities is the package, while calculator.py and greetings.py are modules
 # pip?
 Some modules are not included with Python. You can install external libraries using pip, Python's package installer.
 python -m pip install numpy
+
+# Virtual Environments in Python 
+# A virtual environment is an isolated space for a Python project where you can install its own packages without affecting other projects.
