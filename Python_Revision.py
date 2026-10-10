@@ -219,3 +219,18 @@ student_info(
     age = 23,
     semester = 6
 )
+
+
+# Lambda Functions in Python 
+# A lambda function is a small, anonymous function in Python that is written in a single expression.
+# In simple words, a lambda function lets you write a short function in one line without using def.
+Lambda function syntax
+lambda arguments: expression
+
+double = lambda x: x * 2
+print(double(4))
+
+# Lambda with if-else
+check = lambda n: "Even" if n % 2 == 0 else "Odd"
+print(check(4))
+print(check(7))
