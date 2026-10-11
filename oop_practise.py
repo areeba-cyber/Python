@@ -23,3 +23,20 @@ student1 = Student()
 
 print(student1.name)
 # Here, Student is the class, and student1 is an object created from that class.
+
+
+# __init__()
+# The __init__() method initializes an object's attributes when you create it. This lets you give different data to different objects.
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Areeba", 23)
+student2 = Student("Ali", 21)
+
+print(student1.name)
+print(student1.age)
+
+print(student2.name)
+print(student2.age)
