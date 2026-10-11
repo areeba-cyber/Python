@@ -12,3 +12,14 @@ class Student:
 
     def introduce(self):
         print("Hello, I am a student")
+
+
+# object
+# An object is an instance of a class. You create an object by calling the class name with parentheses.
+class Student:
+    name = "Areeba"
+
+student1 = Student()
+
+print(student1.name)
+# Here, Student is the class, and student1 is an object created from that class.
