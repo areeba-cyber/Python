@@ -88,3 +88,35 @@ dog = Dog()
 
 dog.eat()   # Inherited from Animal
 dog.bark()  # Defined in Dog
+
+
+# Encapsulation
+# Encapsulation means keeping data and the methods that operate on that data together, while controlling how the data is accessed or changed.
+# Imagine a bank account. You shouldn't be able to change your balance however you want. Instead, you should deposit or withdraw money through controlled methods.
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print("Deposit successful")
+        else:
+            print("Invalid amount")
+
+    def get_balance(self):
+        return self.__balance
+
+
+account = BankAccount(1000)
+
+account.deposit(500)
+
+print(account.get_balance())
+
+# - self.__balance uses a double underscore to trigger Python's name mangling.
+# - deposit() controls how the balance increases.
+# - get_balance() provides a controlled way to read the balance.
+# - account.__balance will not directly access the original attribute under that name.
+# Python doesn't enforce absolute private access like some languages. Name mangling makes accidental access harder, but it is not a security boundary.
