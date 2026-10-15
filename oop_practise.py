@@ -68,3 +68,23 @@ class BankAccount:
 account1 = BankAccount("Areeba", 1000)
 
 account1.deposit(500)
+
+
+# Inheritance
+# Inheritance means one class can reuse the attributes and methods of another class.
+# Think of it like this: a Dog is an Animal. A dog can use the general behavior of an animal, such as eating, while also having its own behavior, such as barking.
+
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+
+dog = Dog()
+
+dog.eat()   # Inherited from Animal
+dog.bark()  # Defined in Dog
