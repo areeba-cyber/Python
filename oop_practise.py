@@ -143,3 +143,21 @@ class Car:
 
 car = Car()
 car.start_car()
+
+
+
+
+Inheritance
+Relationship: Is-a
+A child class reuses or extends a parent class.
+Example: Dog(Animal)
+
+Encapsulation
+Purpose: Control access to data
+Keep data and behavior together and validate changes.
+Example: BankAccount.deposit()
+
+Composition
+Relationship: Has-a
+One class contains or uses another object's functionality.
+Example: Car has an Engine
