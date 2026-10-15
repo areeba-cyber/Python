@@ -40,3 +40,31 @@ print(student1.age)
 
 print(student2.name)
 print(student2.age)
+
+
+# Methods inside a class
+# Methods are functions defined inside a class. They describe what an object can do.
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def introduce(self):
+        print(f"Hi, my name is {self.name}")
+
+student1 = Student("Areeba")
+student1.introduce()
+# Here, introduce() is a method, and student1.introduce() calls it.
+
+# real-world example
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"New balance: {self.balance}")
+
+account1 = BankAccount("Areeba", 1000)
+
+account1.deposit(500)
