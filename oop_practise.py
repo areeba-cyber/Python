@@ -120,3 +120,26 @@ print(account.get_balance())
 # - get_balance() provides a controlled way to read the balance.
 # - account.__balance will not directly access the original attribute under that name.
 # Python doesn't enforce absolute private access like some languages. Name mangling makes accidental access harder, but it is not a security boundary.
+
+
+# Composition
+# Composition means building a class using objects of other classes.
+# Think about a car. A car has an engine. The Car class doesn't need to inherit from Engine because a car is not an engine; it has an engine.
+
+
+class Engine:
+    def start(self):
+        print("Engine started")
+
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start_car(self):
+        self.engine.start()
+        print("Car is ready to drive")
+
+
+car = Car()
+car.start_car()
