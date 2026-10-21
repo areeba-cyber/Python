@@ -10,9 +10,13 @@ greet("Areeba", greet="Hi")
 
 
 1. Stats function: Write `describe(numbers)` that returns the minimum, maximum, and average of a list. Call it and unpack the three results into separate variables.
+
 2. Default and keyword parameters: Write `make_email(name, domain="example.com")` that returns a lowercase email like `sara.khan@example.com` from `"Sara Khan"`. Call it once with the default domain and once with a keyword argument.
+
 3. Remove duplicates, keep order: Given `[3, 1, 3, 2, 1, 5]`, write a function that returns a new list with duplicates removed while keeping the original order. Using a set will help, but a set alone won’t preserve order.
+
 4. Set operations: Two students’ course lists are `{"math", "physics", "art"}` and `{"art", "history", "math"}`. Print the courses they share, the courses only the first takes, and all courses combined.
+
 5. Word counter: Write `count_words(text)` that returns a dictionary mapping each word to how many times it appears, ignoring case. Then print the word that appears most often.
 
 
