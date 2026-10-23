@@ -424,3 +424,19 @@ print(loaded["skills"])    # ['Python', 'SQL']
 
 3. CSV Files
 Use the csv module. Always pass newline="" when opening CSV files, otherwise you may get blank rows on Windows.
+
+import csv
+
+# Write rows (lists)
+with open("people.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["name", "age", "city"])      # header
+    writer.writerow(["Ayesha", 25, "Lahore"])
+    writer.writerows([["Ali", 30, "Karachi"], ["Sara", 28, "Islamabad"]])
+
+# Read rows (lists)
+with open("people.csv", newline="", encoding="utf-8") as f:
+    reader = csv.reader(f)
+    header = next(reader)                          # skip/store header
+    for row in reader:
+        print(row)                                 # ['Ayesha', '25', 'Lahore']
