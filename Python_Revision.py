@@ -374,3 +374,6 @@ python -m pip install numpy
 
 
 # File I/O in Python: Text, JSON, and CSV
+1. Text Files
+
+# Always use with, which closes the file automatically, even if an error occurs.
