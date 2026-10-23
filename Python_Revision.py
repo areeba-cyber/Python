@@ -420,3 +420,7 @@ with open("data.json", "r", encoding="utf-8") as f:
     loaded = json.load(f)
 
 print(loaded["skills"])    # ['Python', 'SQL']
+
+
+3. CSV Files
+Use the csv module. Always pass newline="" when opening CSV files, otherwise you may get blank rows on Windows.
