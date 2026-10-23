@@ -398,3 +398,7 @@ with open("notes.txt", "r", encoding="utf-8") as f:
 # Read all lines into a list
 with open("notes.txt", encoding="utf-8") as f:
     lines = f.readlines()
+
+
+2. JSON Files
+Use the json module. JSON maps naturally to Python dicts and lists.
