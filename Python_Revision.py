@@ -445,3 +445,14 @@ with open("people.csv", newline="", encoding="utf-8") as f:
 Python Type Hints
 
 Type hints are optional labels that say what type a value should be. Python doesn’t enforce them at runtime. They help you, your editor, and tools like mypy or pyright catch bugs before the code runs.
+
+name: str = "Ali"
+age: int = 25
+price: float = 9.99
+is_active: bool = True
+
+def greet(name: str) -> str:
+    return f"Hello, {name}"
+
+def log(message: str) -> None:   # returns nothing
+    print(message)
