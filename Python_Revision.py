@@ -377,3 +377,24 @@ python -m pip install numpy
 1. Text Files
 
 # Always use with, which closes the file automatically, even if an error occurs.
+# Write (overwrites existing content)
+with open("notes.txt", "w", encoding="utf-8") as f:
+    f.write("Line one\n")
+    f.write("Line two\n")
+
+# Append
+with open("notes.txt", "a", encoding="utf-8") as f:
+    f.write("Line three\n")
+
+# Read entire file
+with open("notes.txt", "r", encoding="utf-8") as f:
+    content = f.read()
+
+# Read line by line (memory-efficient for big files)
+with open("notes.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        print(line.strip())
+
+# Read all lines into a list
+with open("notes.txt", encoding="utf-8") as f:
+    lines = f.readlines()
