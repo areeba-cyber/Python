@@ -440,3 +440,8 @@ with open("people.csv", newline="", encoding="utf-8") as f:
     header = next(reader)                          # skip/store header
     for row in reader:
         print(row)                                 # ['Ayesha', '25', 'Lahore']
+
+
+Python Type Hints
+
+Type hints are optional labels that say what type a value should be. Python doesn’t enforce them at runtime. They help you, your editor, and tools like mypy or pyright catch bugs before the code runs.
